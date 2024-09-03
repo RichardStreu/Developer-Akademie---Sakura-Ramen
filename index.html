@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sakura Ramen</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="./sakura_logo.svg" />
+  </head>
+  <body>
+    <!-- "HERO SECTION" #################################################################################################################################################-->
+
+    <div class="container hero-container">
+      <div class="content-box">
+        <header class="header">
+          <button class="buttonToPopup" id="sakuraLogo">
+            <img
+              class="sakura-logo"
+              src="./assets/img/1_hero/SVG/sakura_logo.svg"
+              alt="Sakura Logo"
+            />
+          </button>
+          <nav class="nav-bar">
+            <a href="#menu" class="link">MENU</a>
+            <a href="#locations" class="link">LOCATIONS</a>
+            <button id="aboutBtn" class="link">ABOUT</button>
+            <a class="phone-number tel-btn" href="tel:+4917654564534"
+              ><img
+                class="phone-img"
+                src="./assets/img/1_hero/SVG/phone.svg"
+                alt="Phone Image"
+              />017654564534</a
+            >
+          </nav>
+        </header>
+        <div class="sakura-name-box">
+          <h1>SAKURA RAMEN</h1>
+          <p>THE BEST RAMEN IN TOWN</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL POPUP YOUTUBE ########################################################################################################################################################### -->
+
+    <!-- the popup is invisible by default -->
+    <div id="popupAbout" class="popup-about popup-invisible">
+      <div class="inner-popup">
+        <div class="popup-text-box">
+          <div class="popup-text">SEE HOW IT'S PREPARED</div>
+          <button id="popupQuitBtn">X</button>
+        </div>
+        <div id="popupIframeBox" class="popup-iframe-box">
+          <iframe
+            id="popupIframe"
+            class="popup-iframe"
+            src="https://www.youtube.com/embed/B8y3SSmz4sg?enablejsapi=1"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- "ORDER SECTION" ###########################################################################################################################-->
+    <div class="container">
+      <div class="content-box order-container">
+        <h1 class="order-heading red-heading">HOW TO ORDER</h1>
+        <div class="orders-box">
+          <div class="order-item">
+            <img
+              class="order-img"
+              src="./assets/img/2_section_how_to_order/SVG/noodle.svg"
+              alt="pick your noodle"
+            />
+            <p class="order-text">Pick your</p>
+            <p class="order-text">noodle</p>
+          </div>
+          <div class="order-item">
+            <img
+              class="order-img"
+              src="./assets/img/2_section_how_to_order/SVG/broth.svg"
+              alt="pick your broth"
+            />
+            <p class="order-text">Pick your</p>
+            <p class="order-text">broth</p>
+          </div>
+          <div class="order-item">
+            <img
+              class="order-img"
+              src="./assets/img/2_section_how_to_order/SVG/egg.svg"
+              alt="add your toppings"
+            />
+            <p class="order-text">Add your</p>
+            <p class="order-text">toppings</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- "MENU SECTION" ######################################################################################################-->
+    <div id="menu" class="container menu-container">
+      <div class="content-box-menu content-box">
+        <h1 class="menu-heading red-heading">OUR MENU</h1>
+        <!-- this is the box of menu: Tonkotsu Ramen -->
+        <div class="menu-box">
+          <img
+            class="menu-img"
+            src="./assets/img/3_section_our_menu/Png/R1.png"
+            alt="Tonkotsu Ramen"
+          />
+          <div class="menu-description">
+            <p class="menu-name">Tonkotsu Ramen</p>
+            <div class="incredients-box">
+              <div class="ingredient">
+                <p>CHICKEN</p>
+                <p>BEEF</p>
+                <p>SHRIMP</p>
+              </div>
+              <div class="price">
+                <p>11.95€</p>
+                <p>12.95€</p>
+                <p>13.95€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- this is the box of menu: Spicy Miso Ramen -->
+        <div id="spicyBox" class="menu-box">
+          <img
+            id="spicyImg"
+            class="menu-img"
+            src="./assets/img/3_section_our_menu/Png/R2.png"
+            alt="Spicy Miso Ramen"
+          />
+          <div class="menu-description">
+            <p class="menu-name">Spicy Miso Ramen</p>
+            <div class="incredients-box">
+              <div class="ingredient">
+                <p>CHICKEN</p>
+                <p>BEEF</p>
+                <p>SHRIMP</p>
+              </div>
+              <div class="price">
+                <p>11.95€</p>
+                <p>12.95€</p>
+                <p>13.95€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- this is the box of menu: Shio Ramen -->
+        <div class="menu-box">
+          <img
+            class="menu-img"
+            src="./assets/img/3_section_our_menu/Png/R3.png"
+            alt="Shio Ramen"
+          />
+          <div class="menu-description">
+            <p class="menu-name">Shio Ramen</p>
+            <div class="incredients-box">
+              <div class="ingredient">
+                <p>CHICKEN</p>
+                <p>BEEF</p>
+                <p>SHRIMP</p>
+              </div>
+              <div class="price">
+                <p>11.95€</p>
+                <p>12.95€</p>
+                <p>13.95€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- "LOCATIONS SECTION" ##########################################################################################-->
+    <div id="locations" class="container container-locations">
+      <div class="red-heading locations-heading">FIND US AT</div>
+      <div class="address-box">
+        <img
+          class="map-marker"
+          src="./assets/img/4_section_find_us_at/SVG/map_marker.svg"
+          alt="map marker"
+        />
+        <div class="address">Kapuzinerstraße 31, München, 80337</div>
+      </div>
+    </div>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2663.2081532638485!2d11.558623013186914!3d48.125509071122245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479ddf44d01affc5%3A0xe7a07e0710be63e8!2sKapuzinerstra%C3%9Fe%2031%2C%2080337%20M%C3%BCnchen!5e0!3m2!1sde!2sde!4v1722419807981!5m2!1sde!2sde"
+      width="100%"
+      height="600px"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+
+    <!-- "FOOTER SECTION" ####################################################################################-->
+    <div id="about" class="container container-footer">
+      <div class="content-box content-box-footer">
+        <div class="footer-logo-box">
+          <img
+            id="logoNameFooter"
+            src="./assets/img/5_section_footer/PNG/sakura_ramen_logo_and_text.png"
+            height="44px"
+            alt="logo and name"
+          />
+          <img
+            class="sakura-logo-footer link"
+            id="sakuraLogoFooter"
+            src="./assets/img/1_hero/SVG/sakura_logo.svg"
+            alt="Sakura Logo"
+          />
+        </div>
+        <div class="social-media-box">
+          <a
+            class="social-media-img"
+            href="https://www.tripadvisor.de/"
+            target="_blank"
+            ><img
+              class="social-media-img-footer"
+              src="./assets/img/5_section_footer/SVG/tripadvisor_logo.svg"
+              alt="Tripadivsor"
+          /></a>
+          <a
+            class="social-media-img"
+            href="https://www.facebook.com/"
+            target="_blank"
+            ><img
+              class="social-media-img-footer"
+              src="./assets/img/5_section_footer/SVG/facebook_logo.svg"
+              alt="Facebook"
+          /></a>
+          <a
+            class="social-media-img"
+            href="https://www.instagram.com/"
+            target="_blank"
+            ><img
+              class="social-media-img-footer"
+              src="./assets/img/5_section_footer/SVG/instagram_logo.svg"
+              alt="Instagram"
+          /></a>
+        </div>
+      </div>
+    </div>
+
+    <script src="sakura.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+  </body>
+</html>

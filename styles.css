@@ -1,0 +1,783 @@
+/* ######################## NAVIGATION ##################################### */
+
+/* BASIC SETTINGS - FONTS - COLORS */
+
+/* CLASSES & ID's */
+
+/* BASIC CLASSES */
+
+/* all about the HERO SECTION ########################################*/
+
+/* all about MODAL POPUP YOUTUBE ########################################*/
+
+/* all about the ORDER SECTION ########################################*/
+
+/* all about the MENU SECTION ########################################*/
+
+/* all about the LOCATIONS SECTION ########################################*/
+
+/* all about the FOOTER SECTION ########################################*/
+
+/* these are the links to our fonts */
+@font-face {
+  font-family: "Raleway";
+  src: url(./assets/fonts/Raleway/Raleway-VariableFont_wght.ttf)
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Economica";
+  src: url(./assets/fonts/Economica/Economica-Bold.ttf);
+  font-weight: 700;
+}
+
+/* these are the variables from our main colors */
+
+:root {
+  --color-defaultText: #000000;
+  --color-h2Text: #9f0908;
+  --color-dishPriceText: #675e54;
+  --color-footer: #0a141e;
+}
+
+/* these are basic settings*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ################################################################################################################################################### */
+/* ################################################################################################################################################### */
+
+/* CLASSES */
+
+/* BASIC CLASSES */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 160px;
+  padding-right: 160px;
+}
+
+.content-box {
+  width: 100%;
+  max-width: 1440px;
+}
+
+.red-heading {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 80px;
+  color: var(--color-h2Text);
+}
+
+/* all about the HERO SECTION ########################################*/
+
+.buttonToPopup {
+  background-color: transparent;
+  border: none;
+}
+
+
+.hero-container {
+  height: 100vh;
+  background-image: url(./assets/img/1_hero/JPG/hero_bg.jpg);
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  height: 112px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.sakura-logo {
+  width: 64px;
+  height: 64px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.nav-bar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.link {
+  color: white;
+  font-family: "Raleway";
+  font-size: 24px;
+  text-decoration: none;
+  margin-left: 64px;
+  transition: all 0.2s ease;
+}
+
+.link:hover {
+  transform: translateY(-4px);
+}
+
+.tel-btn {
+  display: flex;
+  align-items: center;
+  height: 64px;
+  background-color: var(--color-h2Text);
+  height: 56px;
+  padding-top: auto;
+  padding-bottom: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: 64px;
+  border-radius: 16px;
+  border: solid 2px white;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.tel-btn:hover,
+.tel-btn:target {
+  box-shadow: 0 4px 12px black;
+  transform: translateY(-4px);
+}
+
+.phone-img {
+  height: 24px;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
+.phone-number {
+  color: white;
+  font-family: "Raleway";
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.sakura-name-box {
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10rem;
+}
+
+.sakura-name-box p {
+  color: white;
+  font-family: "Raleway";
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.sakura-name-box h1 {
+  color: white;
+  font-family: "Raleway";
+  font-size: 96px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+#aboutBtn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* all about MODAL POPUP YOUTUBE ########################################*/
+
+.popup-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup-invisible {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.popup-about {
+  width: 1000px;
+  height: 800px;
+  transition: all 0.5s ease;
+  background-color: var(--color-footer);
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.671);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+
+.inner-popup {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-text-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 112px;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 24px;
+  color: white;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.popup-iframe-box {
+  height: 100%;
+}
+
+.popup-iframe {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+#popupQuitBtn {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 24px;
+  color: white;
+  background-color: transparent;
+  border: none;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+#popupQuitBtn:hover,
+#popupQuitBtn:active {
+  transform: translateY(-4px);
+}
+
+/* all about the ORDER SECTION ########################################*/
+
+.order-container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.order-heading {
+  margin-bottom: 64px;
+}
+
+.orders-box {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.order-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.order-text {
+  color: var(--color-defaultText);
+  font-family: "Economica";
+  font-size: 56px;
+}
+
+.order-img {
+  width: 128px;
+  margin-bottom: 16px;
+}
+
+/* all about the MENU SECTION ########################################*/
+
+.menu-container {
+  background-image: url(./assets/img/3_section_our_menu/JPG/section_our_menu_bg.jpg);
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-box-menu {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+.menu-heading {
+  text-align: center;
+  padding-bottom: 8px;
+}
+
+.menu-box {
+  display: flex;
+  align-items: center;
+  margin-top: 56px;
+}
+
+.menu-img {
+  width: 352px;
+  height: 352px;
+  margin-right: 80px;
+}
+
+.menu-name {
+  font-family: "Economica";
+  font-weight: 700;
+  font-size: 56px;
+  margin-bottom: 8px;
+}
+
+.incredients-box {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--color-dishPriceText);
+  display: flex;
+  justify-content: space-between;
+  max-width: 460px;
+}
+
+.ingredient p {
+  margin-top: 8px;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+}
+
+.price p {
+  margin-top: 8px;
+}
+
+#spicyBox {
+  flex-direction: row-reverse;
+}
+
+#spicyImg {
+  margin-left: 80px;
+  margin-right: 0;
+}
+
+/* all about the LOCATIONS SECTION ########################################*/
+
+.container-locations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.locations-heading {
+  margin-top: 120px;
+}
+
+.address-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 64px;
+}
+
+.map-marker {
+  height: 24px;
+  margin-right: 8px;
+}
+
+.address {
+  font-family: "Raleway";
+  font-size: 24px;
+}
+
+/* all about the FOOTER SECTION ########################################*/
+
+.container-footer {
+  background-color: var(--color-footer);
+  height: 144px;
+  display: flex;
+  justify-content: center;
+}
+
+.content-box-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sakura-logo-footer {
+  display: none;
+}
+
+.footer-logo-box {
+  height: 44px;
+  display: flex;
+}
+
+.social-media-box {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-media-img {
+  width: 40px;
+  height: 40px;
+  margin-left: 16px;
+}
+
+/* MEDIA QUERYS ######################################################################################## */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+@media screen and (max-width: 1240px) {
+  .container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  #sakuraLogo {
+    margin: 0;
+    display: block;
+  }
+
+  .link:hover {
+    transform: translateY(0px);
+  }
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+@media screen and (max-width: 1030px) {
+  .menu-img {
+    margin-right: 24px;
+  }
+  #spicyImg {
+    margin-left: 24px;
+  }
+
+  /* Popup Responsive */
+  .popup-about {
+    width: 100%;
+    height: auto;
+    transition: all 0.5s ease;
+    background-color: var(--color-footer);
+    padding: 0;
+  }
+  .popup-iframe-box {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+  }
+  .popup-text-box {
+    height: 72px;
+  }
+  .popup-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  .sakura-name-box  {
+    margin-top: 0%;
+  } 
+}
+
+
+@media screen and (max-width: 900px) {
+  /* HERO SECTION @media screen and (max-width: 900px)*/
+  .link {
+    display: none;
+  }
+  .phone-img {
+    height: 20px;
+  }
+  .phone-number {
+    font-size: 20px;
+  }
+  .sakura-name-box p {
+    font-size: 20px;
+  }
+  .sakura-name-box h1 {
+    font-size: 72px;
+  }
+  .red-heading {
+    font-size: 64px;
+  }
+
+  /* ORDER SECTION @media screen and (max-width: 900px)*/
+
+  .order-container {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  .order-heading {
+    margin-bottom: 48px;
+  }
+  .order-img {
+    width: 112px;
+    margin-bottom: 8px;
+  }
+  .order-text {
+    font-family: "Economica";
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  /* MENU SECTION @media screen and (max-width: 900px)*/
+
+  .content-box-menu {
+    margin-top: 96px;
+    margin-bottom: 96px;
+  }
+  .menu-heading {
+    text-align: center;
+    padding-bottom: 16px;
+  }
+  .menu-box {
+    margin-top: 32px;
+  }
+  .menu-name {
+    font-size: 32px;
+    margin-bottom: 8px;
+  }
+  .menu-description {
+    width: 100%;
+  }
+  .incredients-box {
+    font-size: 24px;
+  }
+
+  /* LOCATIONS SECTION @media screen and (max-width: 900px)*/
+
+  .locations-heading {
+    margin-top: 96px;
+  }
+  .address-box {
+    margin-top: 8px;
+    margin-bottom: 48px;
+  }
+  .map-marker {
+    height: 20px;
+    margin-right: 8px;
+  }
+  .address {
+    font-size: 20px;
+  }
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+
+@media screen and (max-width: 680px) {
+  /* BASICS */
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  /* HERO SECTION @media screen and (max-width: 680px)*/
+  .header {
+    height: 64px;
+  }
+  .sakura-logo {
+    width: 40px;
+    height: 40px;
+  }
+  .tel-btn {
+    height: 40px;
+  }
+  .link {
+    display: none;
+  }
+  .phone-img {
+    height: 16px;
+  }
+  .phone-number {
+    font-size: 16px;
+  }
+  .sakura-name-box {
+    margin-top: 13rem;
+  }
+  .sakura-name-box p {
+    font-size: 16px;
+  }
+  .sakura-name-box h1 {
+    font-size: 42px;
+  }
+  .red-heading {
+    font-size: 40px;
+  }
+  
+  @media screen and (max-width: 680px) and (orientation: landscape) {
+    .sakura-name-box  {
+      margin-top: 2rem;
+    } 
+  }
+  
+
+  /* ORDER SECTION @media screen and (max-width: 680px)*/
+
+  .order-container {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+  .order-heading {
+    margin-bottom: 0;
+  }
+  .orders-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .order-item {
+    margin-top: 32px;
+  }
+  .order-img {
+    width: 112px;
+    margin-bottom: 8px;
+  }
+  .order-text {
+    font-family: "Economica";
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  /* MENU SECTION @media screen and (max-width: 680px)*/
+
+  .content-box-menu {
+    margin-top: 72px;
+    margin-bottom: 72px;
+  }
+  .menu-heading {
+    text-align: center;
+    padding-bottom: 8px;
+  }
+  .menu-box {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+  }
+  #spicyBox {
+    flex-direction: column;
+  }
+
+  #spicyImg {
+    margin: 0;
+    margin-bottom: 24px;
+  }
+
+  .menu-img {
+    margin: 0;
+    margin-bottom: 24px;
+    width: 300px;
+    height: 300px;
+  }
+  .menu-name {
+    font-size: 32px;
+    margin-bottom: 8px;
+  }
+  .menu-description {
+    width: 100%;
+  }
+  .incredients-box {
+    font-size: 24px;
+    max-width: 100%;
+  }
+
+  /* LOCATIONS SECTION @media screen and (max-width: 680px)*/
+
+  .locations-heading {
+    margin-top: 72px;
+  }
+  .address-box {
+    margin-top: 8px;
+    margin-bottom: 40px;
+  }
+  .map-marker {
+    height: 16px;
+    margin-right: 8px;
+  }
+  .address {
+    font-size: 16px;
+  }
+
+  /* FOOTER SECTION @media screen and (max-width: 680px)*/
+
+  .container-footer {
+    height: 86px;
+  }
+  #logoNameFooter {
+    display: none;
+  }
+  #sakuraLogoFooter {
+    display: block;
+    margin: 0;
+    height: 40px;
+  }
+  .social-media-box {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+  }
+  .social-media-img {
+    width: 32px;
+    height: 32px;
+    margin: 0;
+  }
+  .social-media-img-footer {
+    width: 32px;
+    height: 32px;
+    margin: 0;
+  }
+}
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+@media screen and (width < 375px) {
+  .red-heading {
+    text-align: center;
+  }
+  .menu-img {
+    width: 260px;
+    height: 260px;
+  }
+  .address-box {
+    flex-direction: column;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: center;
+    gap: 0.5rem;
+  }
+}
+
+
